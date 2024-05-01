@@ -1,0 +1,124 @@
+*{
+    /* background-color: #000; */
+    /* background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(3.jpg.jpg);     */
+    color: #fff;
+}
+
+.membership {
+    /* background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(3.jpg.jpg); */
+    padding: 50px 0; /* Adjust padding for better spacing */
+}
+
+.membership__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Increase gap for better separation */
+
+}
+
+.membership__card {
+    margin-left: 30px;
+    /* padding-left: 10%; */
+    padding: 30px;
+    text-align: center;
+    display: inline-block;
+    align-self: center;
+    background-color: black;
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);  */
+    /* border-radius: 10px; Add border radius for a softer look */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* position: relative; */
+    overflow: hidden;
+    height: 85%;
+    width: 75%;
+    /* border-radius: 10px; */
+    /* border-color: orange;  */
+    border: 2px solid orange;
+    /* color: orange; */
+}
+
+.membership__card:hover {
+    transform: scale(1.05); /* Increase scale on hover */
+    /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); Add shadow on hover */
+}
+
+.membership__card h4 {
+    background-color: black;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px; /* Adjust margin for better spacing */
+}
+
+.membership__card h2 {
+    background-color: black;
+
+    margin-bottom: 15px;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.membership__card h2 sup {
+    font-size: 1.5rem;
+    background-color: black;
+
+}
+
+.membership__card h3 {
+    background-color: black;
+    margin-bottom: 20px; /* Adjust margin for better spacing */
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.membership__card p {
+    background-color: black;
+
+    margin-bottom: 20px;
+}
+
+.membership__btn {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    /* border: none; */
+    /* border: orange; */
+    border-radius: 10px;
+    border-color: orange;
+    padding: 12px 24px; /* Increase padding for a more comfortable button */
+    transition: background-color 0.3s ease;
+    background-color: #f57c00;
+    /* color: #f57c00; */
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.membership__btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    transition: transform 0.5s ease;
+    border-radius: 50%;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+}
+
+.membership__btn:hover::before {
+    transform: scale(0);
+}
+
+
+.section__header{
+    text-decoration: wavy;
+    position: relative;
+    text-align: center;
+    font-size: 80px;
+    padding-top: 1px;
+}
